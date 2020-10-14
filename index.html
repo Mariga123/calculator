@@ -8,12 +8,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <style>
-        
+                
         </style>
 </head>
 
 <body>
-    <h1>Calculator</h1>
+    <!-- <h1>Calculator</h1>
     <form id="add">
         <div class="form-group"> <label for="add1">1st number:</label> <input id="add1" class="form-control"
                 type="text"> </div>
@@ -38,12 +38,33 @@
      <button type="submit" class="btn">subtract!</button>
     <div id="output"> </div>
     <form id="divide">
-        <div class="form-group"> <label for="divide1">1st number:</label> <input id="divide1" class="form-control"
+        <div class="form-group"> <label for="divide">1st number:</label> <input id="divide1" class="form-control"
                 type="text"> </div>
-        <div class="form-group"> <label for="divide2">2nd number:</label> <input id="divide2" class="form-control"
+        <div class="form-group"> <label for="divide">2nd number:</label> <input id="divide2" class="form-control"
                 type="text"> </div>
      <button type="submit" class="btn">divide!</button>
-    <div id="output"> </div>
+    <div id="output"> </div> -->
+    <h1>Calculator App</h1>
+<table border="1">
+    <tr>
+        <td>first value</td>
+        <td>Second value</td>
+        <td>Results</td>
+    </tr>
+    <tr>
+        <td><input name="value1" type="text" id="num1"></td>
+        <td><input name="value2" type="text" id="num2"></td>
+        <td><input name="value1" type="text" id="result" readonly></td>       
+    </tr>
+    <tr>
+        <td>
+            <button onclick="showresult('1')">+</button> 
+            <button onclick="showresult('2')">-</button>
+            <button onclick="showresult('3')">*</button>
+            <button onclick="showresult('4')">/</button>
+        </td>
+    </tr>
+</table>
     <script src="js/script.js"></script>
 </body>
 
